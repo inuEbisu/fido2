@@ -16,7 +16,7 @@ Map<String, dynamic> _$AttestedCredentialDataToJson(
 
 Map<String, dynamic> _$AuthenticatorDataToJson(AuthenticatorData instance) =>
     <String, dynamic>{
-      'rpIdHash': instance.rpIdHash,
+      'rpIdHash': instance.flags,
       'flags': instance.flags,
       'signCount': instance.signCount,
       'attestedCredentialData': instance.attestedCredentialData?.toJson(),
